@@ -3,7 +3,7 @@
 
 
 (defn get-prices
-  [source symbol cp start-ttm end-ttm]
+  [symbol cp start-ttm end-ttm source]
   (cond
     (= source "iexcloud") (iexcloud/get-prices symbol cp start-ttm end-ttm)
     :else nil))
